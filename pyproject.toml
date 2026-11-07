@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-postgres-wal-server"
+version = "0.1.0"
+description = "Production Model Context Protocol (MCP) server providing deterministic PostgreSQL WAL checkpoints and Saga compensation for LangGraph agents."
+readme = "README.md"
+authors = [{ name = "Botmartz AI Solutions", email = "info@botmartz.com" }]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "psycopg[binary]>=3.1.0",
+    "pydantic>=2.5.0",
+]
+
+[project.urls]
+Homepage = "https://www.botmartz.com"
+Repository = "https://github.com/botmartz/mcp-postgres-wal-server"
+Documentation = "https://www.botmartz.com/insights/human-in-the-loop-multi-agent-systems-langgraph-postgresql-wal"
